@@ -22,7 +22,7 @@
               "text": "BIS_fnc_absSpeed",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "This function returns the absolute speed of a vehicle in km/h.",
+              "description": "Returns absolute speed of a vehicle in kilometers per hour (km/h).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_absSpeed"
             },
             {
@@ -80,6 +80,13 @@
               "type": "function",
               "description": "Add a respawn inventory for respawn menu.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_addRespawnInventory"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuDisableItem",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Limits respawn loadout or role for new respawn screen.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuDisableItem"
             },
             {
               "text": "BIS_fnc_addRespawnPosition",
@@ -470,7 +477,7 @@
               "text": "BIS_fnc_boundingBoxCorner",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Returns position of all four bounfing box corners.",
+              "description": "Returns position of all four bounding box corners OR Returns position of the nearest corner to the given position.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_boundingBoxCorner"
             },
             {
@@ -1492,7 +1499,7 @@
               "text": "BIS_fnc_dynamicText",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Dynamic opening credits.",
+              "description": "",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_dynamicText"
             },
             {
@@ -1622,13 +1629,6 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_endMission"
             },
             {
-              "text": "BIS_fnc_endMissionServer",
-              "rightLabel": "BIS Function",
-              "type": "function",
-              "description": "End the mission on all computers.",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_endMissionServer"
-            },
-            {
               "text": "BIS_fnc_enemyDetected",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -1753,6 +1753,13 @@
               "type": "function",
               "description": "Generate spreadsheet with object classes and copy it to clipboard.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_exportCuratorCostTable"
+            },
+            {
+              "text": "BIS_fnc_exportEditorPreviews",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Export list of objects for Community Wiki.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_exportEditorPreviews"
             },
             {
               "text": "BIS_fnc_exportFunctionsToWiki",
@@ -2159,6 +2166,13 @@
               "type": "function",
               "description": "Returns the highest number out of the passed set.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_greatestNum"
+            },
+            {
+              "text": "BIS_fnc_groupFromNetId",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Extends MP-only groupFromNetId functionality to SP.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_groupFromNetId"
             },
             {
               "text": "BIS_fnc_groupIndicator",
@@ -2577,7 +2591,7 @@
               "text": "BIS_fnc_isInZoom",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Checks if map zoom level is in between given interval (min,max).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_isInZoom"
             },
             {
@@ -2614,6 +2628,13 @@
               "type": "function",
               "description": "Return if unit is virtual (used for example for Zeus players).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_isUnitVirtual"
+            },
+            {
+              "text": "BIS_fnc_isThrowable",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Returns true if given magazine is throwable.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_isThrowable"
             },
             {
               "text": "BIS_fnc_itemType",
@@ -2738,7 +2759,7 @@
               "text": "BIS_fnc_linearConversion",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Linear conversion of a value from one set to another.",
+              "description": "Linear conversion of a value from one set to another This function became obsolete with the introduction of linearConversion.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_linearConversion"
             },
             {
@@ -3088,7 +3109,7 @@
               "text": "BIS_fnc_MP",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "this function was obsoleted since 1.50; use the engine based commands remoteExec or  remoteExecCall instead.",
+              "description": "This function is now provided for backward compatibility only.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_MP"
             },
             {
@@ -3134,6 +3155,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_nearestRoad"
             },
             {
+              "text": "BIS_fnc_netId",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Extends MP-only netId functionality to SP.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_netId"
+            },
+            {
               "text": "BIS_fnc_neutralizeUnit",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -3174,6 +3202,13 @@
               "type": "function",
               "description": "Convert a number into string (avoiding scientific notation).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_numberText"
+            },
+            {
+              "text": "BIS_fnc_objectFromNetId",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Extends MP-only objectFromNetId functionality to SP.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_objectFromNetId"
             },
             {
               "text": "BIS_fnc_objectHeight",
@@ -4243,7 +4278,7 @@
               "text": "BIS_fnc_setOvercast",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Sets overcast based on number (ranging from 0 to 1) passed onto function.",
+              "description": "Instantly set weather conditions and share it across network.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_setOvercast"
             },
             {
@@ -4369,7 +4404,7 @@
               "text": "BIS_fnc_showRespawnMenu",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Triggers the respawn screen in the given mode.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenu"
             },
             {
@@ -4406,6 +4441,20 @@
               "type": "function",
               "description": "Returns side ID (as used in config).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_sideID"
+            },
+            {
+              "text": "BIS_fnc_sideIsEnemy",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Determines if side B is enemy to side A the way the game engine does it.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_sideIsEnemy"
+            },
+            {
+              "text": "BIS_fnc_sideIsFriendly",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Determines if side B is friendly to side A the way the game engine does it.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_sideIsFriendly"
             },
             {
               "text": "BIS_fnc_sideName",
@@ -4488,7 +4537,7 @@
               "text": "BIS_fnc_spawnEnemy",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Spawns enemies around players.",
+              "description": "Spawns enemies near player according to array of enemy classes.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_spawnEnemy"
             },
             {
@@ -4597,6 +4646,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_target"
             },
             {
+              "text": "BIS_fnc_taskAlwaysVisible",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Returns true if task is forced to be always visible (default: false).",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_taskAlwaysVisible"
+            },
+            {
               "text": "BIS_fnc_taskAttack",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -4695,6 +4751,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_taskReal"
             },
             {
+              "text": "BIS_fnc_taskSetAlwaysVisible",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Flags task to be or not to be always visible.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_taskSetAlwaysVisible"
+            },
+            {
               "text": "BIS_fnc_taskSetCurrent",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -4723,6 +4786,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_taskSetState"
             },
             {
+              "text": "BIS_fnc_taskSetType",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Sets task type to given task.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_taskSetType"
+            },
+            {
               "text": "BIS_fnc_taskState",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -4735,6 +4805,13 @@
               "type": "function",
               "description": "Grab all tasks currently created for a given unit.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_tasksUnit"
+            },
+            {
+              "text": "BIS_fnc_taskType",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Returns type of given task.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_taskType"
             },
             {
               "text": "BIS_fnc_taskVar",
@@ -4784,13 +4861,6 @@
               "type": "function",
               "description": "Calculates threat values of given unit.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_threat"
-            },
-            {
-              "text": "BIS_fnc_timeToString",
-              "rightLabel": "BIS Function",
-              "type": "function",
-              "description": "This function returns a 24-hour time as a string from a decimal.",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_timeToString"
             },
             {
               "text": "BIS_fnc_titlecard",
@@ -5118,7 +5188,7 @@
               "text": "BIS_fnc_weaponComponents",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Returns array with classname of the plain weapon (without attachments), followed by classnames of all its attachments.",
+              "description": "Returns array with classname of the parent weapon (without attachments), followed by classnames of all its attachments.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_weaponComponents"
             },
             {
